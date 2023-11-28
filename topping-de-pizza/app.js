@@ -1,12 +1,12 @@
-const listaDeToppings = document.getElementById('lista-toppings');
+const toppings = document.getElementsByClassName('topping');
 
-//Maneras de acceder al texto del nodo 
+for (const topping of toppings) {
+    topping.addEventListener('click',(e)=>{
+        console.log(e.target.innerText)
+    })
+}
 
-// console.log('>innerText');
-// console.log(listaDeToppings.innerText);
 
-// console.log('>innerContent');
-// console.log(listaDeToppings.innerContent);
 
-// console.log('>innerHTML');
-// console.log(listaDeToppings.innerHTML);
+
+
